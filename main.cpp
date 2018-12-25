@@ -322,6 +322,15 @@ int main(int argc, char** argv)
                     ratio = b/w;
                     cout << "The ratio = " << ratio;
                     imshow("GG",dst);
+                    if(ratio > 1.4 && !dst.empty())
+                    {
+                         putText(frame, "1" ,Point(50,200), FONT_HERSHEY_SIMPLEX, 3, Scalar(255,255,255),3);
+                    }
+                    else
+                    {
+
+                         putText(frame, "4" ,Point(50,200), FONT_HERSHEY_SIMPLEX, 3, Scalar(255,255,255),3);
+                    }
 
 
 
